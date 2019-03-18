@@ -1,0 +1,19 @@
+mat-card.example-card.mat-card[_ngcontent-c2] {  
+    margin-left:20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+} 
+span.censor {
+  float: right;
+  color:#999;
+}
+.heading{
+  margin-left: 20px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+@media(max-width:767px){
+ .example-card img{
+  height: 280px;
+}
+}

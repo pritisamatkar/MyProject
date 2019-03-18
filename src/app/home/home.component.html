@@ -1,0 +1,32 @@
+<div class="Block1"> 
+  <p class="heading">Movies</p>
+<div class="cardlist"  fxLayout="row wrap" fxLayout.lt-sm="column" > 
+    <div class="column"  fxFlex="25%" fxFlex.lt-sm="100%"  *ngFor="let movie of  movieList; let i=index">
+      <mat-card class="example-card" *ngIf="i<=3">
+         <!--  <div class="clearfix" ng-if="($index + 1) % 4 == 0"></div> -->
+          <img mat-card-image src="{{movie.src}}" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              {{movie.name |  titlecase }}<span class="censor">{{movie.genre | titlecase }} |  {{movie.rating}} </span> 
+            </p>
+          </mat-card-content>
+        </mat-card> 
+  </div>
+</div>
+</div>
+<div class="Block1"> 
+    <p class="heading">Events</p>
+  <div class="cardlist"  fxLayout="row wrap" fxLayout.lt-sm="column" > 
+      <div class="column"  fxFlex="25%" fxFlex.lt-sm="100%"  *ngFor="let eve of playsList; let i=index">
+        <mat-card class="example-card" *ngIf="i<=3">
+           <!--  <div class="clearfix" ng-if="($index + 1) % 4 == 0"></div> -->
+            <img mat-card-image src="{{eve.src}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{eve.name |  titlecase }}<span class="censor">{{eve.venue | titlecase }} | {{eve.date | titlecase }}  </span> 
+              </p>
+            </mat-card-content>
+          </mat-card> 
+    </div>
+  </div>
+  </div>

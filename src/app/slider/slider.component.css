@@ -1,0 +1,14 @@
+img{
+    width:100%;
+    margin: 0 auto;
+    height: 360px;;
+}
+  ul.navbar-nav li a:hover {
+    color: red !important;
+}
+@media(max-width:768px){
+    
+img{
+  height: 230px;
+}
+}
